@@ -6,16 +6,17 @@
         <!-- Compressed CSS -->
         <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">-->
         <!--Google fonts-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto">
 
-        <style>
+        <style type ="text/css">
             body{
-            background-color: rgb(44, 43, 43);
-            Font-size: 100px;
+            background-color: rgb(46, 44, 44); 
             color: white;
             margin-top: 10%;
-            
+            Font-size: 100px;
+            <!-- text-shadow: 5px 5px gray; -->
             }
+
             div{
                 text-align: center;
                 
@@ -27,7 +28,7 @@
                 color: gray;
                 font-size: 20px;
                 font-style: helvetica;
-                
+                outline: none;
             }
             /* Style all font awesome icons */
             .fa {
@@ -63,20 +64,47 @@
                 color: white;
                 border-radius: 30px;
             }
+            .fa-youtube{
+                background: rgb(241, 3, 3);
+                color: white;
+                border-radius: 30px;
+
+            }
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+            a:hover{
+                text-decoration: underline;
+
+            }
+            #under{
+                text-decoration: none;
+            }
+            
             
          </style>
         
     </head>
     <body>
+        <div style="font-size:15px; position: absolute; top: 10px; right: 115px; text-align: right;">
+        <a href="https://www.gmail.com/">Gmail</a>
+        </div>
+        <div style="color: white; font-size:15px; position: absolute; top: 10px; right: 60px; text-align: right;">
+        <a href = "https://www.google.com/imghp?hl=en&tab=ri&ogbl">Images</a>
+        </div>
         <div>
-        Google
+        <a id="under" href="https://www.google.com/">Google</a>
         </div>
         <div> 
             <form>   
             <input type = "search", placeholder = "Search Google or type a URL">
+            <br>
             </form>
-            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-            <a href="https://twitter.com/" class="fa fa-twitter"></a>
-            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+            <a id="under" href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a id="under" href="https://twitter.com/" class="fa fa-twitter"></a>
+            <a id="under" href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+            <a id="under" href="https://www.youtube.com/" class="fa fa-youtube"></a>
         </div>
+        
     </body>
